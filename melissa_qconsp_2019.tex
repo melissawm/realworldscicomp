@@ -512,32 +512,7 @@
     \hyperlink{features}{\beamergotobutton{back}}
     \addtocounter{framenumber}{-1}
   \end{frame}
-  
-\begin{frame}{LLVM}
-  \begin{itemize}
-  \item LLVM is an umbrella project of low-level compiler toolchain components. It is written in C++  
-  \item LLVM can be used as a compiler framework, where you provide the "front end" (parser and lexer) and the "back end" (code that converts LLVM's representation to actual machine code).
-  \item LLVM can also act as a JIT compiler - it has support for x86/x86$_{\ }$64 and PPC/PPC64 assembly generation with fast code optimizations aimed for compilation speed.
-  \item LLVM is famous for its Intermediate Representation (IR) and IR Optimizer.
-  \item Some languages use C as IR: Python
-  \item LLVM's IR is a low-level programming language, similar to assembly. It is a strongly typed RISC-like instruction set.
-  \item LLVM's IR Optimizer allows various input languages to be transformed to machine code to various architectures
-  \item The IR Optimizer eliminated redundancy by looking at the structure of the IR
-  \item LLVM is great as a compiler backend for statically-typed compiled languages, but it has been known not to work equally well in the context of dynamic languages; some projects are moving away from it      
-  \end{itemize}
-  \addtocounter{framenumber}{-1}
-\end{frame}
- 
-\begin{frame}{SIMD Vectorization}
-  \begin{itemize}
-  \item Single instruction, multiple data (SIMD) is a class of parallel computers in Flynn's taxonomy
-  \item From \href{https://en.wikipedia.org/wiki/SIMD}{Wikipedia}: \emph{"It describes computers with multiple processing elements that perform the same operation on multiple data points simultaneously. Such machines exploit data level parallelism, but not concurrency: there are simultaneous (parallel) computations, but only a single process (instruction) at a given moment. SIMD is particularly applicable to common tasks such as adjusting the contrast in a digital image or adjusting the volume of digital audio. Most modern CPU designs include SIMD instructions to improve the performance of multimedia use. SIMD is not to be confused with SIMT, which utilizes threads."} 
-  \end{itemize}
-  \addtocounter{framenumber}{-1}
-\end{frame}
-
+   
 \end{darkframes}
 
 \end{document}
-
-%https://www.scivision.dev/speed-of-matlab-vs-python-numpy-numba/
