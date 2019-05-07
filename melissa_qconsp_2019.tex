@@ -270,7 +270,7 @@
     \item A estrutura de dados primária é o vetor/matriz
     \item Sintaxe de slicing nativa, masked arrays, vetorização$^*$
     \item É difícil escrever código lento! (\hyperlink{aliasing}{\emph{non-aliasing}})
-    \item Fortran é \href{https://en.wikipedia.org/wiki/Concurrent_computing}{concurrent} desde 2008: \href{https://en.wikipedia.org/wiki/Coarray_Fortran}{coarrays} (com a ajuda do MPI)
+    \item Fortran é \href{https://en.wikipedia.org/wiki/Concurrent_computing}{concurrent} desde 2008: \href{https://en.wikipedia.org/wiki/Coarray_Fortran}{coarrays} (com MPI)
     %This allows arrays to be split between processors for parallel processing, and it includes a natural syntax for interprocessor communication. With coarrays, parallel computation becomes part of the language specification rather than requiring a clumsy interface to an external library (although under the hood this is all actually implemented using MPI).
     \item Legibilidade: feito para computação científica
     \item Compiladores muito eficientes (alguns "roubando") \hyperlink{compilers}{\beamergotobutton{lista}}; 
@@ -313,7 +313,7 @@
         \begin{itemize}
         \item Fortran (SciPy) + Numba + Python ainda tem context switching 
           % From a function, Numba can generate native code for that function as well as the wrapper code needed to call it directly from Python. This compilation is done on-the-fly and in-memory.
-        \item Não faz otimização interprocedural (interprocedural optimizations)
+        \item Não faz otimização interprocedural
         \item Determinar quando o código deve usar um JIT nem sempre é óbvio
           % It is worth noting that, as alluded to by Jörg, JIT is not necessarily invoked right away. Often, code will be interpreted until it is determined that it will be worth JITting. Since JITting can introduce delays, it may be faster to NOT JIT some code if it is rarely used and thus a fast response is more important than overall runtime.
         \end{itemize}
